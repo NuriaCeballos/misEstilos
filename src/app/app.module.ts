@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+// import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
-import {MatIconModule} from '@angular/material/icon';
+// import {MatIconModule} from '@angular/material/icon';
 import { MaterialModule } from './material/material.module';
 
 
@@ -12,8 +12,8 @@ import { MaterialModule } from './material/material.module';
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule,
-    MatIconModule,
+    // BrowserAnimationsModule,
+    // MatIconModule,
     MaterialModule
    
   ],

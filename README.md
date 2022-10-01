@@ -25,3 +25,58 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## configuration Angular Material
+
+npm install --save angular/material2-builds angular/cdk-builds angular/animations-builds
+
+npm install --save hammerjs
+
+Para los iconos
+
+(<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">)
+
+Este código va en style.scss:
+
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+// COLORES DISPONIBLES: https://material.io/design/color/
+$candy-app-primary: mat-palette($mat-indigo);
+$candy-app-accent:  mat-palette($mat-pink, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$candy-app-warn:    mat-palette($mat-red);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$candy-app-theme: mat-light-theme($candy-app-primary, $candy-app-accent, $candy-app-warn);
+
+@include angular-material-theme($candy-app-theme);
+
+En angular.json:
+
+"styles": [
+                               "src/styles.css"
+                               "src/mitema.scss"
+                                    ],
+
+Por último he creado un módulo, modulo 
+material.module.ts    
+
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { MatToolbarModule } from ‘@angular/material’;
+@NgModule({
+imports: [
+CommonModule,
+MatToolbarModule,
+],
+exports: [
+MatToolbarModule,
+],
+})
+export class MaterialModule { }
+
+y se importa a app.module para usarlo en todos los sitios
+

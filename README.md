@@ -85,3 +85,10 @@ y se importa a app.module para usarlo en todos los sitios
 TODA LA INFO LA SAQUE DE ESTA WEB:
 https://medium.com/@sandy.e.veliz/angular-material-design-instalaci%C3%B3n-angular-material-790caca5677b
 
+
+
+## mis notas 
+
+
+https://angular.io/guide/animations
+

@@ -40,6 +40,8 @@ Este código va en style.scss:
 
 @import '~@angular/material/theming';
 
+import 'hammerjs'; en el archivo main.ts
+
 @include mat-core();
 
 // COLORES DISPONIBLES: https://material.io/design/color/
@@ -79,4 +81,7 @@ MatToolbarModule,
 export class MaterialModule { }
 
 y se importa a app.module para usarlo en todos los sitios
+
+TODA LA INFO LA SAQUE DE ESTA WEB:
+https://medium.com/@sandy.e.veliz/angular-material-design-instalaci%C3%B3n-angular-material-790caca5677b
 
